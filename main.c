@@ -87,10 +87,35 @@ int main() {
 }
 
 void fungsi_split_bill() {
-    // Anggota 2: Kerjakan di sini
+    int jumlah_orang;
+    float total_tagihan, hasil_per_orang;
+
     printf("\n[Fitur 2: Split Bill]\n");
-    printf("Sedang dalam pengembangan...\n\n");
-    printf("Tekan Enter untuk kembali...");
+    printf("----------------------------------------\n");
+
+    // Input total tagihan
+    printf("Masukkan total tagihan: Rp ");
+    scanf("%f", &total_tagihan);
+
+    // Input jumlah orang
+    printf("Masukkan jumlah orang: ");
+    scanf("%d", &jumlah_orang);
+
+    // Output
+    if (jumlah_orang <= 0) {
+        printf("\n[Error] Jumlah orang harus lebih dari 0!\n");
+    } else {
+        hasil_per_orang = total_tagihan / jumlah_orang;
+
+        printf("\n========================================\n");
+        printf("Total Tagihan : Rp %.0f\n", total_tagihan);
+        printf("Jumlah Orang  : %d\n", jumlah_orang);
+        printf("----------------------------------------\n");
+        printf("Per Orang     : Rp %.0f\n", hasil_per_orang);
+        printf("========================================\n");
+    }
+
+    printf("\nTekan Enter untuk kembali...");
     getchar(); getchar();
 }
 
