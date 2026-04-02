@@ -56,9 +56,7 @@ int main() {
 }
 
 // --- FUNGSI-FUNGSI (Anggota silakan isi di sini) ---
-
-void fungsi_diskon() {
-    // Anggota 1: Kerjakan di sini
+  // Anggota 1: Kerjakan di sini
    void fungsi_diskon() {
     float harga_awal, diskon_persen, potongan, harga_akhir;
 
