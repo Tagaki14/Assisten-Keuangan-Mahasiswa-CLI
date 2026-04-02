@@ -59,8 +59,31 @@ int main() {
 
 void fungsi_diskon() {
     // Anggota 1: Kerjakan di sini
+   void fungsi_diskon() {
+    float harga_awal, diskon_persen, potongan, harga_akhir;
+
     printf("\n[Fitur 1: Diskon Belanja]\n");
-    printf("Sedang dalam pengembangan...\n\n");
+    printf("----------------------------------------\n");
+
+    // Input
+    printf("Masukkan harga barang (Rp): ");
+    scanf("%f", &harga_awal);
+
+    printf("Masukkan diskon (%%): ");
+    scanf("%f", &diskon_persen);
+
+    // Perhitungan
+    potongan = harga_awal * (diskon_persen / 100);
+    harga_akhir = harga_awal - potongan;
+
+    // Output
+    printf("\n===== HASIL PERHITUNGAN =====\n");
+    printf("Harga Awal     : Rp %.2f\n", harga_awal);
+    printf("Diskon         : %.2f%%\n", diskon_persen);
+    printf("Potongan       : Rp %.2f\n", potongan);
+    printf("Harga Akhir    : Rp %.2f\n", harga_akhir);
+    printf("=============================\n\n");
+
     printf("Tekan Enter untuk kembali...");
     getchar(); getchar();
 }
