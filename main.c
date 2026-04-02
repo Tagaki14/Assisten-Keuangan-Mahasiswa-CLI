@@ -56,6 +56,7 @@ int main() {
 }
 
 // --- FUNGSI-FUNGSI (Anggota silakan isi di sini) ---
+<<<<<<< HEAD
   // Anggota 1: Kerjakan di sini
    void fungsi_diskon() {
     float harga_awal, diskon_persen, potongan, harga_akhir;
@@ -82,11 +83,19 @@ int main() {
     printf("Harga Akhir    : Rp %.2f\n", harga_akhir);
     printf("=============================\n\n");
 
+=======
+
+void fungsi_diskon() {
+    // Anggota 1: Kerjakan di sini
+    printf("\n[Fitur 1: Diskon Belanja]\n");
+    printf("Sedang dalam pengembangan...\n\n");
+>>>>>>> origin/Fitur-Khaiz-Kalkulator-Sisa-Uang-Jajan-Harian
     printf("Tekan Enter untuk kembali...");
     getchar(); getchar();
 }
 
 void fungsi_split_bill() {
+<<<<<<< HEAD
     int jumlah_orang;
     float total_tagihan, hasil_per_orang;
 
@@ -116,6 +125,12 @@ void fungsi_split_bill() {
     }
 
     printf("\nTekan Enter untuk kembali...");
+=======
+    // Anggota 2: Kerjakan di sini
+    printf("\n[Fitur 2: Split Bill]\n");
+    printf("Sedang dalam pengembangan...\n\n");
+    printf("Tekan Enter untuk kembali...");
+>>>>>>> origin/Fitur-Khaiz-Kalkulator-Sisa-Uang-Jajan-Harian
     getchar(); getchar();
 }
 
@@ -128,9 +143,36 @@ void fungsi_bunga_tabungan() {
 }
 
 void fungsi_sisa_uang_jajan() {
+<<<<<<< HEAD
     // Anggota 4: Kerjakan di sini
     printf("\n[Fitur 4: Sisa Uang Jajan]\n");
     printf("Sedang dalam pengembangan...\n\n");
+=======
+    float uang_jajan, pengeluaran, sisa;
+
+    printf("\n[Fitur 4: Sisa Uang Jajan]\n");
+
+    printf("masukkan total uang jajan harianmu: ");
+    scanf("%f", &uang_jajan);
+
+    printf("masukkan total pengeluaranmu hari ini: ");
+    scanf("%f", &pengeluaran);
+
+    sisa = uang_jajan - pengeluaran;
+
+    printf("\n----------------------------------------\n");
+
+    if (sisa > 0) {
+        printf("sisa uang jajan kamu: Rp %.2f\n", sisa);
+        printf("kamu hemat, mantap pisan!\n");
+    } else if (sisa == 0) {
+        printf("yah kasian deh duitnya habis :(\n");
+    } else {
+        printf("boros banget deh kamuu, borosnya sampai: Rp %.2f\n", -sisa);
+    }
+
+    printf("----------------------------------------\n");
+>>>>>>> origin/Fitur-Khaiz-Kalkulator-Sisa-Uang-Jajan-Harian
     printf("Tekan Enter untuk kembali...");
     getchar(); getchar();
 }
