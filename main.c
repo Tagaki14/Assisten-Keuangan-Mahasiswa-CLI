@@ -73,7 +73,7 @@ void fungsi_split_bill() {
     getchar(); getchar();
 }
 
-void fungsi_bunga_tabungan() {
+void fungsi_Kalkulator_bunga_tabungan_sederhana() {
     // Anggota 3: Kerjakan di sini
     printf("\n[Fitur 3: Bunga Tabungan]\n");
     printf("Sedang dalam pengembangan...\n\n");
