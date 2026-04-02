@@ -134,12 +134,44 @@ void fungsi_split_bill() {
     getchar(); getchar();
 }
 
-void fungsi_bunga_tabungan() {
-    // Anggota 3: Kerjakan di sini
-    printf("\n[Fitur 3: Bunga Tabungan]\n");
-    printf("Sedang dalam pengembangan...\n\n");
-    printf("Tekan Enter untuk kembali...");
-    getchar(); getchar();
+void fungsi_Kalkulator_bunga_tabungan_sederhana() {
+
+    // Anggota 3: Daris Eshan
+
+    float saldoAwal, bungaPersen, totalUang;
+
+
+
+    printf("\n[Fitur 3: Kalkulator Bunga Tabungan Sederhana]\n");
+
+    printf("Masukkan saldo awal: ");
+
+    scanf("%f", &saldoAwal);
+
+    printf("Masukkan bunga bulanan (%%): ");
+
+    scanf("%f", &bungaPersen);
+
+
+
+    // Rumus: Saldo + (Saldo * bunga/100)
+
+    totalUang = saldoAwal + (saldoAwal * (bungaPersen / 100));
+
+
+
+    printf("----------------------------------------\n");
+
+    printf("Total uang setelah ditambah bunga: %.2f\n", totalUang);
+
+    printf("----------------------------------------\n");
+
+    
+
+    printf("\nTekan Enter untuk kembali...");
+
+    getchar(); getchar(); // Menahan tampilan agar tidak langsung balik ke menu
+
 }
 
 void fungsi_sisa_uang_jajan() {
